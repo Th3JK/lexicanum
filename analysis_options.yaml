@@ -1,0 +1,29 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+  language:
+    strict-casts: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    # This package is published for reuse: every public member is documented.
+    public_member_api_docs: true
+    # Value types are hand-written; these keep them honest.
+    always_declare_return_types: true
+    prefer_final_locals: true
+    prefer_single_quotes: true
+    unnecessary_lambdas: true
+    unnecessary_parenthesis: true
+    avoid_dynamic_calls: true
+    use_super_parameters: true
+    # The message AST is built around sealed types; make non-exhaustive use visible.
+    exhaustive_cases: true

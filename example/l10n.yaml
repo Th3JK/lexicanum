@@ -1,0 +1,9 @@
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+# Makes AppLocalizations.of(context) non-null, so the BuildContext extension
+# below needs no `!` -- this is what turns
+#   AppLocalizations.of(context)!.welcomeTitle
+# into
+#   context.locale.welcomeTitle
+nullable-getter: false

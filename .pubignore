@@ -1,0 +1,10 @@
+# A .pubignore REPLACES .gitignore for this directory, so everything that was
+# covered there has to be restated here. This project is not a git repository,
+# so there is no third source of truth.
+build/
+.dart_tool/
+.idea/
+*.iml
+example/build/
+example/.dart_tool/
+example/lib/l10n/app_localizations*.dart

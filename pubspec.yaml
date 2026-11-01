@@ -1,0 +1,34 @@
+name: lexicanum
+description: >-
+  Localized generic data objects. Hold per-locale variants of text, media or any
+  value in an immutable, JSON-round-trippable container, resolve them at the
+  presentation boundary, and keep your domain objects free of BuildContext.
+version: 0.1.0
+homepage: https://github.com/th3jk/lexicanum
+repository: https://github.com/th3jk/lexicanum
+issue_tracker: https://github.com/th3jk/lexicanum/issues
+topics: [localization, internationalization, i18n, l10n, icu]
+
+environment:
+  sdk: ^3.13.1
+  # Localizations.localeOf and the gen-l10n output this package documents are
+  # stable well before this, but 3.35 is the floor the sibling packages use.
+  flutter: ">=3.35.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Date symbol initialisation. DateFormat throws for any locale but en_US
+  # until something calls loadDateIntlDataIfNotLoaded, and this is what does.
+  flutter_localizations:
+    sdk: flutter
+  # Pinned to the minor that flutter_localizations itself depends on, because
+  # this package calls Intl.pluralLogic/selectLogic directly.
+  intl: ^0.20.3
+  collection: ^1.19.0
+  meta: ^1.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

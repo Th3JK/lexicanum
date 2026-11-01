@@ -1,0 +1,5 @@
+{
+  "@@locale": "cs",
+  "welcomeTitle": "Vítejte",
+  "itemCount": "{n, plural, one{{n} položka} few{{n} položky} other{{n} položek}}"
+}

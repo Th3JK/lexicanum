@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lexicanum-example",
+      "runtimeExecutable": "flutter",
+      "runtimeArgs": ["run", "-d", "web-server", "--web-port", "8749", "--web-hostname", "127.0.0.1"],
+      "cwd": "example",
+      "port": 8749
+    }
+  ]
+}

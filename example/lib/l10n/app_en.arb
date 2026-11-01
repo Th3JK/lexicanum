@@ -1,0 +1,14 @@
+{
+  "@@locale": "en",
+  "welcomeTitle": "Welcome",
+  "@welcomeTitle": {
+    "description": "Heading on the first screen"
+  },
+  "itemCount": "{n, plural, one{{n} item} other{{n} items}}",
+  "@itemCount": {
+    "description": "Number of items in the basket",
+    "placeholders": {
+      "n": { "type": "int" }
+    }
+  }
+}
